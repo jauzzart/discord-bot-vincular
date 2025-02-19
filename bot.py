@@ -1,5 +1,5 @@
 {\rtf1\ansi\ansicpg1252\cocoartf2639
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AppleColorEmoji;}
 {\colortbl;\red255\green255\blue255;}
 {\*\expandedcolortbl;;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
@@ -84,7 +84,9 @@ class VincularView(View):\
             await interaction.user.add_roles(role)\
 \
             # Enviar uma mensagem no canal restrito para os administradores\
-            admin_channel = discord.utils.get(interaction.guild.text_channels, name="admin-channel")\
+            admin_channel = discord.utils.get(interaction.guild.text_channels, name="
+\f1 \uc0\u55357 \u57056 
+\f0 \uc0\u9475 chat-staff")\
             await admin_channel.send(f"Novo formul\'e1rio recebido de \{interaction.user.name\} (\{interaction.user.id\}):\\nEmail: \{email\}\\nNick do Minecraft: \{nick_minecraft\}\\nIdade: \{idade\}\\nNick no Discord: \{nick_discord\}")\
 \
         except asyncio.TimeoutError:\
@@ -116,7 +118,9 @@ async def on_ready():\
 @bot.event\
 async def on_member_join(member: discord.Member):\
     # Canal de boas-vindas ou qualquer canal onde voc\'ea queira que o bot envie a mensagem\
-    channel = discord.utils.get(member.guild.text_channels, name="boas-vindas")  # Substitua pelo nome do seu canal\
+    channel = discord.utils.get(member.guild.text_channels, name="
+\f1 \uc0\u55357 \u56395 
+\f0 \uc0\u9475 bem-vindo")  # Substitua pelo nome do seu canal\
 \
     if channel:\
         # Cria o bot\'e3o de vincula\'e7\'e3o\
@@ -124,5 +128,5 @@ async def on_member_join(member: discord.Member):\
         await channel.send(f"Bem-vindo ao servidor, \{member.mention\}! Para se vincular, clique no bot\'e3o abaixo:", view=view)\
 \
 # Rodando o bot\
-bot.run('YOUR_BOT_TOKEN')\
+bot.run('MTMzMDkxNTg5OTkyMTkyODI0NA.GFb2p_.8FQ5SNMQA0aI0n6cOHRQOHJfrpH2cjzZZk0gFY')\
 }
